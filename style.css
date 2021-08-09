@@ -5,16 +5,14 @@
     height: 800px;
     width: 800px;
     
-    grid-template-columns: repeat(16, 50px);
-    grid-template-rows: repeat(16, 50px);
+    /* grid-template-columns: repeat(16, 50px);
+    grid-template-rows: repeat(16, 50px); */
 }
 
 .gridElement {
-    border: solid 0.1px black;
-    
-    
-}
+    border: solid 1px black;
 
+}
 
 
 
