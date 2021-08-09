@@ -1,0 +1,1 @@
+This project (etch-a-sketch) will serve as a vessel by means of which I can strengthen my DOM manipulation skills.
