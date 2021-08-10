@@ -6,7 +6,7 @@ let allElements;
 function grid_type(n)
 {
     let i=0;
-    // console.log(n);
+    
     while(i<n*n)
     {
         const oneElement = document.createElement('div');
@@ -18,31 +18,22 @@ function grid_type(n)
     allElements = document.querySelectorAll(".gridElement");
     allElements.forEach(element => {
         element.addEventListener("mouseover", () => {
-    
-            element.style.backgroundColor = 'blue';
+            
+            element.style.backgroundColor = "blue";
         });
     });
 
     let z = 800/n;
     
-    // container.style.gridTemplateColumns = `repeat(${n}, ${z} + "px")`;
-    // container.style.gridTemplateRows = `repeat(${n}, ${z} + "px")`;
+    
 
-    container.style.gridTemplateColumns = 'repeat(16, 50px)';
-    container.style.gridTemplateRows = 'repeat(16, 50px)'; 
+    container.style.gridTemplateColumns = "repeat(" + n + ", " + z + "px)";
+    container.style.gridTemplateRows = "repeat(" + n + ", " + z + "px)"; 
 }
 
 
 grid_type(16);
 
-
-// const allElements = document.querySelectorAll(".gridElement");
-// allElements.forEach(element => {
-//     element.addEventListener("mouseover", () => {
-
-//         element.style.backgroundColor = 'blue';
-//     });
-// });
 
 const change = document.querySelector(".change");
 
