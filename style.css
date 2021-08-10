@@ -1,9 +1,25 @@
+.heading {
+    /* border: solid 1px black; */
+    width: 382.5px;
+    margin: auto;
+}
 
+h1 {
+    color: black;
+    
+}
+
+body {
+    background-color:rgb(204, 196, 196);
+}
 .container {
 
     display: grid;
     height: 800px;
     width: 800px;
+    border: solid 15px black;
+    background-color: white;
+    margin: auto;
     
     /* grid-template-columns: repeat(16, 50px);
     grid-template-rows: repeat(16, 50px); */
@@ -14,15 +30,24 @@
 
 }
 
+.change {
+    border: solid 5px purple;
+    height: 50px;
+    width: 100px;
 
+    position: fixed;
+    top: 25vh;
+    right: 20vw;
+    
+}
 
 #btn1 {
     height: 50px;
     width: 100px;
 
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    /* position: fixed;
+    top: 30vh;
+    right: 0; */
     
     
 }

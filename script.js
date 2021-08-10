@@ -19,7 +19,7 @@ function grid_type(n)
     allElements.forEach(element => {
         element.addEventListener("mouseover", () => {
             
-            element.style.backgroundColor = "blue";
+            element.style.backgroundColor = "purple";
         });
     });
 
@@ -55,8 +55,16 @@ function rem(D)
 
 btn.addEventListener("click", () => {
 
-    let D = prompt("Enter D for DxD Dimension Grid");
-    if(!(D === "") && D<=100)
+    let D = prompt("Enter a number 'D' for a Grid of DxD Dimensions");
+    
+    
+    if(!(D === "" || D === null) && D<=100)
     rem(D);
+
+    else if(D > 100)
+    alert("Your dimension size must not exceed 100!");
+
+    else if(D === "")
+    alert("Please enter the required dimension.");
     
 });
